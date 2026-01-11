@@ -4,20 +4,16 @@ import java.util.Scanner;
 
 public class EvenOdd {
     public static void main(String[] args) {
-
         System.out.print("Enter num: ");
         Scanner sc=new Scanner(System.in);
+        int num= sc.nextInt();
+        System.out.println();
 
-
-        int num=sc.nextInt();
-
-        if(num>0){
-            System.out.println("Positive num: "+num);
-        } else if (num==0) {
-            System.out.println("Zero num: "+num);
+        if(num%2==0){
+            System.out.println("Even num: "+num);
         }
-        else {
-            System.out.println("Negative number: "+num);
+        else{
+            System.out.println("Odd num: "+num);
         }
     }
 }
